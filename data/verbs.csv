@@ -1,0 +1,73 @@
+,uri,nvn,nvn_syllables,en,nvn_desc,en_desc,prime,is_generic,is_state,is_process,is_cognition,is_transfer
+0,,,[''],after,,,Thing,False,False,False,False,False
+1,,,[''],all,,to be the whole quantity,Meta,False,False,False,False,False
+2,,,[''],bad,,to be bad,Meta,False,False,False,False,False
+3,,,[''],before,,,Thing,False,False,False,False,False
+4,,,[''],cause,,to cause (somethingg),Meta,False,False,False,False,False
+5,,,[''],distance,,,Thing,False,False,False,False,False
+6,,,[''],entity,,,Thing,False,False,False,False,False
+7,,,[''],exist; thing,,to exist,Thing,False,False,False,False,False
+8,,,[''],good,,to be good,Meta,False,False,False,False,False
+9,,,[''],group,,to be together,Thing,False,False,False,False,False
+10,,,[''],here,,,Thing,False,False,False,False,False
+11,,,[''],if,,to be under the condition of,Meta,False,False,False,False,False
+12,,,[''],inside,,,Thing,False,False,False,False,False
+13,,,[''],kind of; sort of,,to share caracteristics with,Meta,False,False,False,False,False
+14,,,[''],less (than),,to be of lower quantity/importance/degree,Meta,False,False,False,False,False
+15,,,[''],a little (of),,to be a small amount,Meta,False,False,False,False,False
+16,,,[''],many; a lot (of),,to be a numerous amount,Meta,False,False,False,False,False
+17,,,[''],more,,to be of higher quantity/importance/degree,Meta,False,False,False,False,False
+18,,,[''],most (of),,to be the major part of the quantity,Meta,False,False,False,False,False
+19,,,[''],negative,,,,False,False,False,False,False
+20,,,[''],Novan,,"to be Novan; to be an individual
+",Thing,False,False,False,False,False
+21,,,[''],now,,,Thing,False,False,False,False,False
+22,,,[''],a pack (of),,to be an amount between 2 and 12 (both included); to be a pack (of),Meta,False,False,False,False,False
+23,,,[''],pair (of),,to be a pair (of),Meta,False,False,False,False,False
+24,,,[''],part (of); element,,to be a part of,Meta,False,False,False,False,False
+25,,,[''],positive,,,,False,False,False,False,False
+26,,,[''],possible,,to be possible,Meta,False,False,False,False,False
+27,,,[''],repeat,,,Thing,False,False,False,False,False
+28,,,[''],same,,to be identical to,Meta,False,False,False,False,False
+29,,,[''],side,,,Thing,False,False,False,False,False
+30,,,[''],similar,,to resemble but not be identical to,Meta,False,False,False,False,False
+31,,,[''],size,,,Thing,False,False,False,False,False
+32,,,[''],this; observe this,,,Thing,False,False,False,False,False
+33,,,[''],true,,to be true,Meta,False,False,False,False,False
+34,,,[''],unit (of); a,,to be a unit (of); to be a single,Meta,False,False,False,False,False
+35,,,[''],very,,to be of high quantity/importance/degree,Meta,False,False,False,False,False
+36,,,[''],think; have an opinion (of),,"to think/have an opinion (of)
+",Action,False,False,False,False,False
+37,,,[''],think; process mentaly,,"to think/process mentaly
+",Action,False,False,False,False,False
+38,,,[''],intent; want,,"to have the intent/want (to)
+",Action,False,False,False,False,False
+39,,,[''],feel; percieve,,"to feel/percieve
+",Action,False,False,False,False,False
+40,,,[''],hear,,"to hear
+",Action,False,False,False,False,False
+41,,,[''],say,,"to say
+",Action,False,False,False,False,False
+42,,,[''],word,,"to be a word, an elementary unit of language
+",Action,False,True,False,False,False
+43,,,[''],happen; occur,,"to happen/occur
+",Action,True,False,False,False,False
+44,,,[''],move; go,,"to move/go (towards)
+
+
+",Action,False,False,False,False,False
+45,,,[''],use,,"to use; to utilize
+",Action,False,False,False,False,False
+46,,,[''],hunt; look for,,"to hunt; to look for
+",Action,False,False,False,False,False
+47,,,[''],exist,,"to exist
+
+",Action,False,True,False,False,False
+48,,,[''],possess; have,,"to possess/have something
+",Action,True,False,False,False,False
+49,,,[''],live; alive; born,,"to live/be born
+",Action,False,True,False,False,False
+50,,,[''],die; killed,,"to die/be killed
+",Action,False,True,False,False,False
+51,,,[''],stasis,,"to exist in a no-life existance; to be between life and death; to be in a stasis
+",Action,False,True,False,False,False
