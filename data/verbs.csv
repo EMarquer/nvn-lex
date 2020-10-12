@@ -18,14 +18,14 @@
 16,,,[''],many; a lot (of),,to be a numerous amount,Meta,False,False,False,False,False
 17,,,[''],more,,to be of higher quantity/importance/degree,Meta,False,False,False,False,False
 18,,,[''],most (of),,to be the major part of the quantity,Meta,False,False,False,False,False
-19,,,[''],negative,,,,False,False,False,False,False
+19,,,[''],negative,,,Not a prime,False,False,False,False,False
 20,,,[''],Novan,,"to be Novan; to be an individual
 ",Thing,False,False,False,False,False
 21,,,[''],now,,,Thing,False,False,False,False,False
 22,,,[''],a pack (of),,to be an amount between 2 and 12 (both included); to be a pack (of),Meta,False,False,False,False,False
 23,,,[''],pair (of),,to be a pair (of),Meta,False,False,False,False,False
 24,,,[''],part (of); element,,to be a part of,Meta,False,False,False,False,False
-25,,,[''],positive,,,,False,False,False,False,False
+25,,,[''],positive,,,Not a prime,False,False,False,False,False
 26,,,[''],possible,,to be possible,Meta,False,False,False,False,False
 27,,,[''],repeat,,,Thing,False,False,False,False,False
 28,,,[''],same,,to be identical to,Meta,False,False,False,False,False
