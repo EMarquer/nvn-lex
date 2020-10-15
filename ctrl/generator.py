@@ -127,7 +127,6 @@ class GeneratorController:
         selector_frame = ttk.Frame(content)
         selector_frame.grid(sticky='nsew', column=0, row=1)
         selector_frame.columnconfigure(0, weight=1)
-        selector_frame.columnconfigure(1, weight=1)
         vowels_frame = ttk.Frame(content)
         vowels_frame.grid(sticky='nsew', column=0, row=2)
         vowels_frame.columnconfigure(0, weight=1)
@@ -161,7 +160,6 @@ class GeneratorController:
         nvn_syllables.grid(sticky='ew', row=1, column=0, padx=PAD)
         generate.grid(sticky='ew', row=0, column=1)
         nvn_play.grid(sticky='ew', row=1, column=1)
-        nvn_play.state(['disabled']) # TODO
 
     def _setup_selector_ui(self, parent):
         """Initialize the generator selection view.
@@ -199,7 +197,7 @@ class GeneratorController:
         Parameters:
             parent: The parent widget.
         """
-        frame = ttk.Labelframe(parent, text='Vovels')
+        frame = ttk.Labelframe(parent, text='Vowels')
         frame.grid(sticky='nsew')
         frame.columnconfigure(1, weight=1, minsize=MINSIZE)
 

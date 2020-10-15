@@ -157,7 +157,6 @@ class VerbEditorController:
         reg = parent.register(lambda x: self.nvn_description_controller.validate_entry(nvn_entry, x))
         nvn_entry['validate'] = "key"
         nvn_entry['validatecommand'] = (reg, '%P')
-        nvn_play.state(['disabled']) # TODO
 
         nvn_entry.bind("<KeyRelease>", self.update)
         en_entry.bind("<KeyRelease>", self.update)

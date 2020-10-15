@@ -5,6 +5,12 @@ Handles the processes to go manipulate wordforms and the corresponding sounds.
 from tkinter import StringVar, Text, ttk
 import typing as t
 from model.nvn import ALPHABET, is_valid, syllabify
+from pydub import AudioSegment
+from pydub.playback import play
+
+WAV_PATH = "nvn-syl/{}.wav"
+INTER_SYLLABLE_BLANK_DURATION = -250
+VOLUME_AJUST = lambda sound: sound + 0
 
 class WordformController:
     """Wordform controller class.
@@ -31,7 +37,11 @@ class WordformController:
     def pronounce(self):
         """Plays audio corresponding to the syllables."""
         print(f"Pronouncing {self.nvn_syllables.get()}.")
-        raise NotImplementedError
+        full_sound = AudioSegment.silent(duration=0)
+        for syl in self.get_syllable_list():
+            full_sound += AudioSegment.from_wav(WAV_PATH.format(syl))[:INTER_SYLLABLE_BLANK_DURATION]
+            
+        play(full_sound)
 
     def validate_entry(self, entry: ttk.Entry, nvn: t.Optional[str] = None):
         """Validate the content of a Tkinter entry.
@@ -91,7 +101,7 @@ class WordformController:
             text.config(foreground='red')
         else:
             text.config(foreground='')
-        
+
         return is_alphabetic
 
     def syllabify(self, *args):
@@ -99,3 +109,10 @@ class WordformController:
         nvn = self.nvn.get()
         if is_valid(nvn):
             self.nvn_syllables.set(tuple(syl for syl in syllabify(nvn)))
+
+    def get_syllable_list(self):
+        """Read the variable containing the list of syllables and returns a list of strings."""
+        syllables = [syl.strip().strip("'") for syl in self.nvn_syllables.get()[1:-1].split(',')]
+        syllables = [syl for syl in syllables if syl]
+
+        return syllables
