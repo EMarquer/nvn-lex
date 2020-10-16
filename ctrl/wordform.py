@@ -37,9 +37,11 @@ class WordformController:
     def pronounce(self):
         """Plays audio corresponding to the syllables."""
         print(f"Pronouncing {self.nvn_syllables.get()}.")
-        full_sound = AudioSegment.silent(duration=0)
-        for syl in self.get_syllable_list():
-            full_sound += AudioSegment.from_wav(WAV_PATH.format(syl))[:INTER_SYLLABLE_BLANK_DURATION]
+        syls = self.get_syllable_list()
+        if len(syls) > 0:
+            full_sound = AudioSegment.from_wav(WAV_PATH.format(syl))[:INTER_SYLLABLE_BLANK_DURATION]
+            for syl in syls:
+                full_sound += AudioSegment.from_wav(WAV_PATH.format(syl))[:INTER_SYLLABLE_BLANK_DURATION]
             
         play(full_sound)
 
